@@ -9,5 +9,6 @@
     <body>
         @yield('body')
         <script src="{{ mix('js/main.js', 'assets/build')}}" charset="utf-8"></script>
+        @yield('scripts')
     </body>
 </html>
