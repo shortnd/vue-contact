@@ -2,7 +2,11 @@
 
 @section('body')
 <h1 id="el">Hello @{{ name }}!</h1>
-<form>
+<form method="post" name="contact" action="/thank-you">
+  <input type="hidden" name="form-name" value="contact">
+  <p style="display:none">
+    <label>Dont fill this out: <input name="bot-field"></label>
+  </p>
   <label for="name">Name</label>
   <input type="text" id="name" name="name">
   <div id="number">
@@ -14,6 +18,7 @@
       </div>
     @endverbatim
   </div>
+  <input class="button" type="submit" value="Send Message" />
 </form>
 @endsection
 
