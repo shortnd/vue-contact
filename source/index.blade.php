@@ -2,7 +2,7 @@
 
 @section('body')
 <h1 id="el">Hello @{{ name }}!</h1>
-<form method="post" name="contact" action="/thank-you">
+<form method="post" name="contact" action="/thank-you" netlify netlify-honypot="bot-field">
   <input type="hidden" name="form-name" value="contact">
   <p style="display:none">
     <label>Dont fill this out: <input name="bot-field"></label>
